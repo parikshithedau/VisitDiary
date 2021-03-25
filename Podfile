@@ -6,6 +6,7 @@ target 'Visit Diary' do
   use_frameworks!
 
   # Pods for Visit Diary
+  # Add pod files name here
 
 pod 'AnimatedField'
 
