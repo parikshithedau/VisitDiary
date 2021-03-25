@@ -10,11 +10,8 @@ import UIKit
 
 class CreateTripTableDataSource: NSObject, UITableViewDelegate, UITableViewDataSource {
     
-    var 
     var items: [T]?
-    
-    
-    
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return CreateTripCell.allCases.count
