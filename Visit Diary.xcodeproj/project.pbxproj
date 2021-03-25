@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50308672EC4EAD69ECCC92B0 /* Pods_Visit_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9343805EEDE0F3158F326 /* Pods_Visit_Diary.framework */; };
+		9134719625DB97EF007EFEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9134719525DB97EF007EFEA1 /* AppDelegate.swift */; };
+		9134719D25DB97EF007EFEA1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9134719B25DB97EF007EFEA1 /* Home.storyboard */; };
+		913471A225DB97F0007EFEA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913471A125DB97F0007EFEA1 /* Assets.xcassets */; };
+		913471A525DB97F0007EFEA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913471A325DB97F0007EFEA1 /* LaunchScreen.storyboard */; };
+		913471C125DB9A7B007EFEA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913471C025DB9A7B007EFEA1 /* Constants.swift */; };
+		913471C325DB9A89007EFEA1 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913471C225DB9A89007EFEA1 /* StringConstants.swift */; };
+		913471C525DB9D11007EFEA1 /* PHDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913471C425DB9D11007EFEA1 /* PHDBManager.swift */; };
+		913471C925DBA054007EFEA1 /* VisitDiaryDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 913471C725DBA054007EFEA1 /* VisitDiaryDB.xcdatamodeld */; };
+		91E1AC2225DBA937002FB478 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC2125DBA937002FB478 /* Utility.swift */; };
+		91E1AC2425DBA94A002FB478 /* Appearances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC2325DBA94A002FB478 /* Appearances.swift */; };
+		91E1AC2625DBAA8A002FB478 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC2525DBAA8A002FB478 /* Extensions.swift */; };
+		91E1AC2825DBAF48002FB478 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC2725DBAF48002FB478 /* Enums.swift */; };
+		91E1AC2B25EAAD1F002FB478 /* CreateTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC2A25EAAD1F002FB478 /* CreateTripViewController.swift */; };
+		91E1AC2F25EB7C1D002FB478 /* CreateTripViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC2E25EB7C1D002FB478 /* CreateTripViewModal.swift */; };
+		91E1AC3125EB7C3A002FB478 /* CreateTripModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC3025EB7C3A002FB478 /* CreateTripModal.swift */; };
+		91E1AC3425EB7D2E002FB478 /* CreateTripTxtTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC3325EB7D2E002FB478 /* CreateTripTxtTableCell.swift */; };
+		91E1AC3625EB89FF002FB478 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC3525EB89FF002FB478 /* HomeViewController.swift */; };
+		91E1AC3825EC174D002FB478 /* CreateTripTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC3725EC174D002FB478 /* CreateTripTableDataSource.swift */; };
+		91E1AC3D25EC1B0E002FB478 /* LocationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC3C25EC1B0E002FB478 /* LocationModal.swift */; };
+		91E1AC3F25EC1B23002FB478 /* MemberModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1AC3E25EC1B23002FB478 /* MemberModal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32B9343805EEDE0F3158F326 /* Pods_Visit_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visit_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3ED244751D6A5ABD58F58F /* Pods-Visit Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Diary.debug.xcconfig"; path = "Target Support Files/Pods-Visit Diary/Pods-Visit Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		9134719225DB97EF007EFEA1 /* Visit Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visit Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9134719525DB97EF007EFEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9134719C25DB97EF007EFEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		913471A125DB97F0007EFEA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		913471A425DB97F0007EFEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		913471A625DB97F0007EFEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		913471C025DB9A7B007EFEA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		913471C225DB9A89007EFEA1 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		913471C425DB9D11007EFEA1 /* PHDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHDBManager.swift; sourceTree = "<group>"; };
+		913471C825DBA054007EFEA1 /* VisitDiaryDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VisitDiaryDB.xcdatamodel; sourceTree = "<group>"; };
+		91E1AC2125DBA937002FB478 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		91E1AC2325DBA94A002FB478 /* Appearances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearances.swift; sourceTree = "<group>"; };
+		91E1AC2525DBAA8A002FB478 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91E1AC2725DBAF48002FB478 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		91E1AC2A25EAAD1F002FB478 /* CreateTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewController.swift; sourceTree = "<group>"; };
+		91E1AC2E25EB7C1D002FB478 /* CreateTripViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewModal.swift; sourceTree = "<group>"; };
+		91E1AC3025EB7C3A002FB478 /* CreateTripModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripModal.swift; sourceTree = "<group>"; };
+		91E1AC3325EB7D2E002FB478 /* CreateTripTxtTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripTxtTableCell.swift; sourceTree = "<group>"; };
+		91E1AC3525EB89FF002FB478 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		91E1AC3725EC174D002FB478 /* CreateTripTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripTableDataSource.swift; sourceTree = "<group>"; };
+		91E1AC3C25EC1B0E002FB478 /* LocationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModal.swift; sourceTree = "<group>"; };
+		91E1AC3E25EC1B23002FB478 /* MemberModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModal.swift; sourceTree = "<group>"; };
+		E5E24EE68F24373DE5793F42 /* Pods-Visit Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visit Diary.release.xcconfig"; path = "Target Support Files/Pods-Visit Diary/Pods-Visit Diary.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9134718F25DB97EF007EFEA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50308672EC4EAD69ECCC92B0 /* Pods_Visit_Diary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DC3A7F1E0002D46D9E63E19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B3ED244751D6A5ABD58F58F /* Pods-Visit Diary.debug.xcconfig */,
+				E5E24EE68F24373DE5793F42 /* Pods-Visit Diary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9134718925DB97EF007EFEA1 = {
+			isa = PBXGroup;
+			children = (
+				9134719425DB97EF007EFEA1 /* Visit Diary */,
+				9134719325DB97EF007EFEA1 /* Products */,
+				5DC3A7F1E0002D46D9E63E19 /* Pods */,
+				CFF355271ADF864914A702F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9134719325DB97EF007EFEA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9134719225DB97EF007EFEA1 /* Visit Diary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9134719425DB97EF007EFEA1 /* Visit Diary */ = {
+			isa = PBXGroup;
+			children = (
+				9134719525DB97EF007EFEA1 /* AppDelegate.swift */,
+				913471C625DBA02F007EFEA1 /* DBManager */,
+				913471BC25DB9A46007EFEA1 /* AppUtility */,
+				913471B825DB9918007EFEA1 /* ViewControllers */,
+				913471B725DB9918007EFEA1 /* Resources */,
+				913471BA25DB9918007EFEA1 /* Storyboards */,
+				913471B925DB9918007EFEA1 /* ThirdParty */,
+				913471A625DB97F0007EFEA1 /* Info.plist */,
+			);
+			path = "Visit Diary";
+			sourceTree = "<group>";
+		};
+		913471B725DB9918007EFEA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				913471A125DB97F0007EFEA1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		913471B825DB9918007EFEA1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC2925EAAD0A002FB478 /* CreateTrip */,
+				913471BB25DB99B4007EFEA1 /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		913471B925DB9918007EFEA1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		913471BA25DB9918007EFEA1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9134719B25DB97EF007EFEA1 /* Home.storyboard */,
+				913471A325DB97F0007EFEA1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		913471BB25DB99B4007EFEA1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC3525EB89FF002FB478 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		913471BC25DB9A46007EFEA1 /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC3925EC1AD0002FB478 /* Modals */,
+				913471BF25DB9A46007EFEA1 /* Utility */,
+				913471BD25DB9A46007EFEA1 /* Constants */,
+				913471BE25DB9A46007EFEA1 /* CustomControls */,
+			);
+			path = AppUtility;
+			sourceTree = "<group>";
+		};
+		913471BD25DB9A46007EFEA1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				913471C025DB9A7B007EFEA1 /* Constants.swift */,
+				913471C225DB9A89007EFEA1 /* StringConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		913471BE25DB9A46007EFEA1 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		913471BF25DB9A46007EFEA1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC2125DBA937002FB478 /* Utility.swift */,
+				91E1AC2325DBA94A002FB478 /* Appearances.swift */,
+				91E1AC2525DBAA8A002FB478 /* Extensions.swift */,
+				91E1AC2725DBAF48002FB478 /* Enums.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		913471C625DBA02F007EFEA1 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				913471C425DB9D11007EFEA1 /* PHDBManager.swift */,
+				913471C725DBA054007EFEA1 /* VisitDiaryDB.xcdatamodeld */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		91E1AC2925EAAD0A002FB478 /* CreateTrip */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC2A25EAAD1F002FB478 /* CreateTripViewController.swift */,
+				91E1AC3025EB7C3A002FB478 /* CreateTripModal.swift */,
+				91E1AC2E25EB7C1D002FB478 /* CreateTripViewModal.swift */,
+				91E1AC3725EC174D002FB478 /* CreateTripTableDataSource.swift */,
+				91E1AC3225EB7D03002FB478 /* Cells */,
+			);
+			path = CreateTrip;
+			sourceTree = "<group>";
+		};
+		91E1AC3225EB7D03002FB478 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC3325EB7D2E002FB478 /* CreateTripTxtTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		91E1AC3925EC1AD0002FB478 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				91E1AC3E25EC1B23002FB478 /* MemberModal.swift */,
+				91E1AC3C25EC1B0E002FB478 /* LocationModal.swift */,
+			);
+			name = Modals;
+			path = "Visit Diary/Modals";
+			sourceTree = SOURCE_ROOT;
+		};
+		CFF355271ADF864914A702F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32B9343805EEDE0F3158F326 /* Pods_Visit_Diary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9134719125DB97EF007EFEA1 /* Visit Diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 913471A925DB97F0007EFEA1 /* Build configuration list for PBXNativeTarget "Visit Diary" */;
+			buildPhases = (
+				238B63C8E945819DDE135FB0 /* [CP] Check Pods Manifest.lock */,
+				9134718E25DB97EF007EFEA1 /* Sources */,
+				9134718F25DB97EF007EFEA1 /* Frameworks */,
+				9134719025DB97EF007EFEA1 /* Resources */,
+				B37EDAF47E2B91EF0C66ECE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Visit Diary";
+			productName = "Visit Diary";
+			productReference = 9134719225DB97EF007EFEA1 /* Visit Diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9134718A25DB97EF007EFEA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Parikshit.Hedau;
+				TargetAttributes = {
+					9134719125DB97EF007EFEA1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9134718D25DB97EF007EFEA1 /* Build configuration list for PBXProject "Visit Diary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9134718925DB97EF007EFEA1;
+			productRefGroup = 9134719325DB97EF007EFEA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9134719125DB97EF007EFEA1 /* Visit Diary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9134719025DB97EF007EFEA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913471A525DB97F0007EFEA1 /* LaunchScreen.storyboard in Resources */,
+				913471A225DB97F0007EFEA1 /* Assets.xcassets in Resources */,
+				9134719D25DB97EF007EFEA1 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		238B63C8E945819DDE135FB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Visit Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37EDAF47E2B91EF0C66ECE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Visit Diary/Pods-Visit Diary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Visit Diary/Pods-Visit Diary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Visit Diary/Pods-Visit Diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9134718E25DB97EF007EFEA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913471C925DBA054007EFEA1 /* VisitDiaryDB.xcdatamodeld in Sources */,
+				9134719625DB97EF007EFEA1 /* AppDelegate.swift in Sources */,
+				91E1AC2225DBA937002FB478 /* Utility.swift in Sources */,
+				91E1AC2F25EB7C1D002FB478 /* CreateTripViewModal.swift in Sources */,
+				91E1AC3125EB7C3A002FB478 /* CreateTripModal.swift in Sources */,
+				91E1AC3825EC174D002FB478 /* CreateTripTableDataSource.swift in Sources */,
+				91E1AC3625EB89FF002FB478 /* HomeViewController.swift in Sources */,
+				91E1AC3D25EC1B0E002FB478 /* LocationModal.swift in Sources */,
+				91E1AC2625DBAA8A002FB478 /* Extensions.swift in Sources */,
+				91E1AC2425DBA94A002FB478 /* Appearances.swift in Sources */,
+				913471C525DB9D11007EFEA1 /* PHDBManager.swift in Sources */,
+				91E1AC3425EB7D2E002FB478 /* CreateTripTxtTableCell.swift in Sources */,
+				913471C125DB9A7B007EFEA1 /* Constants.swift in Sources */,
+				91E1AC3F25EC1B23002FB478 /* MemberModal.swift in Sources */,
+				91E1AC2825DBAF48002FB478 /* Enums.swift in Sources */,
+				913471C325DB9A89007EFEA1 /* StringConstants.swift in Sources */,
+				91E1AC2B25EAAD1F002FB478 /* CreateTripViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9134719B25DB97EF007EFEA1 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9134719C25DB97EF007EFEA1 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		913471A325DB97F0007EFEA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				913471A425DB97F0007EFEA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		913471A725DB97F0007EFEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		913471A825DB97F0007EFEA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		913471AA25DB97F0007EFEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3ED244751D6A5ABD58F58F /* Pods-Visit Diary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Visit Diary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dsfds.co.Visit-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		913471AB25DB97F0007EFEA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E24EE68F24373DE5793F42 /* Pods-Visit Diary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Visit Diary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dsfds.co.Visit-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9134718D25DB97EF007EFEA1 /* Build configuration list for PBXProject "Visit Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913471A725DB97F0007EFEA1 /* Debug */,
+				913471A825DB97F0007EFEA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		913471A925DB97F0007EFEA1 /* Build configuration list for PBXNativeTarget "Visit Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913471AA25DB97F0007EFEA1 /* Debug */,
+				913471AB25DB97F0007EFEA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		913471C725DBA054007EFEA1 /* VisitDiaryDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				913471C825DBA054007EFEA1 /* VisitDiaryDB.xcdatamodel */,
+			);
+			currentVersion = 913471C825DBA054007EFEA1 /* VisitDiaryDB.xcdatamodel */;
+			path = VisitDiaryDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9134718A25DB97EF007EFEA1 /* Project object */;
+}

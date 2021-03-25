@@ -1,0 +1,6 @@
+framework module Pods_Visit_Diary {
+  umbrella header "Pods-Visit Diary-umbrella.h"
+
+  export *
+  module * { export * }
+}
